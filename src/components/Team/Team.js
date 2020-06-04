@@ -220,12 +220,15 @@ const Team = ({ showArray = null, showLinkedin = true, showSeo = true }) => {
       return null;
     });
   }
-
+    function deleteUserWithName() {alert('Hello');}
   return (
     <React.Fragment>
       {showSeo && <HelmetSeo content={seoContent} />}
       <div className='container mt-3'>
         <h1>The Atila Team</h1>
+          <button onClick={() => deleteUserWithName()}>
+              Click me!
+          </button>
         <br />
         <Row gutter={16}>
           {teamCards}
